@@ -1,8 +1,8 @@
 using UnityEngine;
-
+using UnityEngine.InputSystem;
 public class PlayerMovement : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    Vector2 movementInput;
     void Start()
     {
         
@@ -11,6 +11,11 @@ public class PlayerMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+    }
+
+    void OnMove(InputValue value)
+    {
+        movementInput = value.Get<Vector2>();
+        print(movementInput);
     }
 }
