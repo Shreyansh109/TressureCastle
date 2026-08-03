@@ -10,6 +10,35 @@
 #
 # Get latest from https://github.com/github/gitignore/blob/main/Unity.gitignore
 #
+
+ Unity
+Library/
+Temp/
+Obj/
+Build/
+Builds/
+Logs/
+MemoryCaptures/
+
+# IDE
+.vs/
+.idea/
+.vscode/
+
+# Auto-generated
+*.csproj
+*.sln
+*.user
+*.pidb
+*.booproj
+*.svd
+*.pdb
+*.mdb
+*.opendb
+*.VC.db
+
+*.lscache
+
 .utmp/
 /[Ll]ibrary/
 /[Tt]emp/
