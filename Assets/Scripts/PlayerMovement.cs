@@ -22,6 +22,10 @@ public class PlayerMovement : MonoBehaviour
     void OnMove(InputValue value)
     {
         movementInput = value.Get<Vector2>();
+        if(movementInput.x > 0)
+            GetComponent<SpriteRenderer>().flipX = false;
+        else if(movementInput.x < 0)
+            GetComponent<SpriteRenderer>().flipX = true;
     }
 
     void Run()
