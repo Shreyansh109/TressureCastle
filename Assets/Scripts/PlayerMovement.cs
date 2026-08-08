@@ -1,18 +1,22 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
+
 public class PlayerMovement : MonoBehaviour
 {
+    Animator animator;
     Vector2 movementInput;
-    Vector2 playerMovement;
+    //Vector2 playerMovement;
 
     bool isGrounded = false;
+
     Rigidbody2D rb;
+
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        animator = GetComponent<Animator>();
     }
 
-    // Update is called once per frame
     void Update()
     {
         Run();
@@ -22,10 +26,21 @@ public class PlayerMovement : MonoBehaviour
     void OnMove(InputValue value)
     {
         movementInput = value.Get<Vector2>();
+        //character flip according to movement direction
         if(movementInput.x > 0)
+        {
             GetComponent<SpriteRenderer>().flipX = false;
+            animator.SetBool("isRunning", true);
+        }
         else if(movementInput.x < 0)
+        {
             GetComponent<SpriteRenderer>().flipX = true;
+            animator.SetBool("isRunning", true);
+        }
+        else
+        {
+            animator.SetBool("isRunning", false);
+        }
     }
 
     void Run()
@@ -37,6 +52,7 @@ public class PlayerMovement : MonoBehaviour
 
     void Fall()
     {
+        //character fall down when not grounded, by increasing the downward velocity
         if (!isGrounded)
         {
             rb.linearVelocityY = -5f;
