@@ -50,7 +50,8 @@ public class PlayerMovement : MonoBehaviour
         {
             rb.linearVelocityY = 7f;
             isJump = true;
-        }else
+        }
+        if(value.isPressed == false)
         {
             isJump = false;
         }
