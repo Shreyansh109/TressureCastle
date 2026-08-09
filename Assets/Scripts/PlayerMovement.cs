@@ -8,6 +8,7 @@ public class PlayerMovement : MonoBehaviour
     //Vector2 playerMovement;
 
     bool isGrounded = false;
+    bool isJump;
 
     Rigidbody2D rb;
 
@@ -43,6 +44,18 @@ public class PlayerMovement : MonoBehaviour
         }
     }
 
+    void OnJump(InputValue value)
+    {
+        if (isGrounded && value.isPressed)
+        {
+            rb.linearVelocityY = 7f;
+            isJump = true;
+        }else
+        {
+            isJump = false;
+        }
+    }
+
     void Run()
     {
         //playerMovement = new Vector2(movementInput.x, 0f);
@@ -53,10 +66,10 @@ public class PlayerMovement : MonoBehaviour
     void Fall()
     {
         //character fall down when not grounded, by increasing the downward velocity
-        if (!isGrounded)
+        if (!isGrounded && !isJump)
         {
             rb.linearVelocityY = -5f;
-        }else
+        }else if(isGrounded && !isJump)
         {
             rb.linearVelocityY = 0f;
         }
