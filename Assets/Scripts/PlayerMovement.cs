@@ -9,6 +9,7 @@ public class PlayerMovement : MonoBehaviour
 
     bool isGrounded = false;
     bool isJump;
+    bool isClimbing = false;
 
     Rigidbody2D rb;
 
@@ -22,6 +23,7 @@ public class PlayerMovement : MonoBehaviour
     {
         Run();
         Fall();
+        Climb();
     }
 
     void OnMove(InputValue value)
@@ -67,10 +69,10 @@ public class PlayerMovement : MonoBehaviour
     void Fall()
     {
         //character fall down when not grounded, by increasing the downward velocity
-        if (!isGrounded && !isJump)
+        if (!isGrounded && !isJump && !isClimbing)
         {
             rb.linearVelocityY = -5f;
-        }else if(isGrounded && !isJump)
+        }else if(isGrounded && !isJump && !isClimbing)
         {
             rb.linearVelocityY = 0f;
         }
@@ -78,7 +80,11 @@ public class PlayerMovement : MonoBehaviour
 
     void Climb()
     {
-        
+        if (isClimbing)
+        {
+            rb.linearVelocityY = movementInput.y * 3f;
+            animator.SetBool("isClimbing", true);
+        }
     }
 
     void OnCollisionEnter2D(Collision2D collision)
@@ -90,4 +96,20 @@ public class PlayerMovement : MonoBehaviour
         isGrounded = false;
     }
 
+    void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (gameObject.CompareTag("Player"))
+        {
+            isClimbing = true;
+        }
+    }
+
+    void OnTriggerExit2D(Collider2D collision)
+    {
+        if (gameObject.layer == LayerMask.NameToLayer("Climb"))
+        {
+            isClimbing = false;
+            animator.SetBool("isClimbing", false);
+        }
+    }
 }
