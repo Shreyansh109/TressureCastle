@@ -76,6 +76,11 @@ public class PlayerMovement : MonoBehaviour
         }
     }
 
+    void Climb()
+    {
+        
+    }
+
     void OnCollisionEnter2D(Collision2D collision)
     {
         isGrounded = true;
