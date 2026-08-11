@@ -82,8 +82,9 @@ public class PlayerMovement : MonoBehaviour
     {
         if (isClimbing)
         {
-            rb.linearVelocityY = movementInput.y * 3f;
+            rb.linearVelocityY = 3f;
             animator.SetBool("isClimbing", true);
+            //rb.gravityScale = 0f;
         }
     }
 
@@ -98,7 +99,7 @@ public class PlayerMovement : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D collision)
     {
-        if (gameObject.CompareTag("Player"))
+        if (LayerMask.LayerToName(collision.gameObject.layer) == "Climb")
         {
             isClimbing = true;
         }
@@ -106,7 +107,7 @@ public class PlayerMovement : MonoBehaviour
 
     void OnTriggerExit2D(Collider2D collision)
     {
-        if (gameObject.layer == LayerMask.NameToLayer("Climb"))
+        if (LayerMask.LayerToName(collision.gameObject.layer) == "Climb")
         {
             isClimbing = false;
             animator.SetBool("isClimbing", false);
