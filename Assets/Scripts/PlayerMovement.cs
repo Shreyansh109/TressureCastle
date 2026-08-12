@@ -80,10 +80,21 @@ public class PlayerMovement : MonoBehaviour
 
     void Climb()
     {
-        if (isClimbing)
+        if (isClimbing && movementInput.y > 0f)
         {
             rb.linearVelocityY = 3f;
             animator.SetBool("isClimbing", true);
+            //rb.gravityScale = 0f;
+        }else if (isClimbing && movementInput.y < 0f)
+        {
+            rb.linearVelocityY = -3f;
+            animator.SetBool("isClimbing", true);
+            //rb.gravityScale = 0f;
+        }
+        else if (isClimbing && movementInput.y == 0f)
+        {
+            rb.linearVelocityY = rb.gravityScale;
+            animator.SetBool("isClimbing", false);
             //rb.gravityScale = 0f;
         }
     }
