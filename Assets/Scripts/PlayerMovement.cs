@@ -55,9 +55,11 @@ public class PlayerMovement : MonoBehaviour
             rb.linearVelocityY = 7f;
             isJump = true;
         }
-        if(value.isPressed == false)
+
+        if (!value.isPressed)
         {
             isJump = false;
+            print("isJump: " + isJump);
         }
     }
 
@@ -82,6 +84,7 @@ public class PlayerMovement : MonoBehaviour
 
     void Climb()
     {
+        //print("isLadder: " + isLadder + " movementInput.y: " + movementInput.y + " isJump: " + isJump);
         if (isLadder && movementInput.y > 0f)
         {
             rb.linearVelocityY = 3f;
@@ -93,7 +96,7 @@ public class PlayerMovement : MonoBehaviour
             animator.SetBool("isClimbing", true);
             //rb.gravityScale = 0f;
         }
-        else if (isLadder && movementInput.y == 0f)
+        else if (isLadder && movementInput.y == 0f && !isJump)
         {
             rb.linearVelocityY = 0f;
             animator.SetBool("isClimbing", false);
@@ -104,6 +107,7 @@ public class PlayerMovement : MonoBehaviour
     void OnCollisionEnter2D(Collision2D collision)
     {
         isGrounded = true;
+        isJump = false;
     }
     void OnCollisionExit2D(Collision2D collision)
     {
@@ -116,7 +120,6 @@ public class PlayerMovement : MonoBehaviour
         {
             isLadder = true;
             canvasPressClimb.SetActive(true);
-            print("Canvas enabled");
         }
     }
 
