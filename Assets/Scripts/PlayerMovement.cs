@@ -9,9 +9,11 @@ public class PlayerMovement : MonoBehaviour
 
     bool isGrounded = false;
     bool isJump;
-    bool isClimbing = false;
+    bool isLadder = false;
 
     Rigidbody2D rb;
+
+    [SerializeField] GameObject canvasPressClimb;
 
     void Start()
     {
@@ -69,10 +71,10 @@ public class PlayerMovement : MonoBehaviour
     void Fall()
     {
         //character fall down when not grounded, by increasing the downward velocity
-        if (!isGrounded && !isJump && !isClimbing)
+        if (!isGrounded && !isJump && !isLadder)
         {
             rb.linearVelocityY = -5f;
-        }else if(isGrounded && !isJump && !isClimbing)
+        }else if(isGrounded && !isJump && !isLadder)
         {
             rb.linearVelocityY = 0f;
         }
@@ -80,20 +82,20 @@ public class PlayerMovement : MonoBehaviour
 
     void Climb()
     {
-        if (isClimbing && movementInput.y > 0f)
+        if (isLadder && movementInput.y > 0f)
         {
             rb.linearVelocityY = 3f;
             animator.SetBool("isClimbing", true);
             //rb.gravityScale = 0f;
-        }else if (isClimbing && movementInput.y < 0f)
+        }else if (isLadder && movementInput.y < 0f)
         {
             rb.linearVelocityY = -3f;
             animator.SetBool("isClimbing", true);
             //rb.gravityScale = 0f;
         }
-        else if (isClimbing && movementInput.y == 0f)
+        else if (isLadder && movementInput.y == 0f)
         {
-            rb.linearVelocityY = rb.gravityScale;
+            rb.linearVelocityY = 0f;
             animator.SetBool("isClimbing", false);
             //rb.gravityScale = 0f;
         }
@@ -112,7 +114,9 @@ public class PlayerMovement : MonoBehaviour
     {
         if (LayerMask.LayerToName(collision.gameObject.layer) == "Climb")
         {
-            isClimbing = true;
+            isLadder = true;
+            canvasPressClimb.SetActive(true);
+            print("Canvas enabled");
         }
     }
 
@@ -120,8 +124,10 @@ public class PlayerMovement : MonoBehaviour
     {
         if (LayerMask.LayerToName(collision.gameObject.layer) == "Climb")
         {
-            isClimbing = false;
+            isLadder = false;
+            rb.linearVelocityY = 0f;
             animator.SetBool("isClimbing", false);
+            canvasPressClimb.SetActive(false);
         }
     }
 }

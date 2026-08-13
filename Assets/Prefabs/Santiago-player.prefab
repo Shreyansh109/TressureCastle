@@ -17,7 +17,7 @@ GameObject:
   - component: {fileID: 2981611019872110164}
   m_Layer: 0
   m_Name: Santiago-player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -32,7 +32,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 8.05, y: -1.46, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.8542096, y: 0.8542096, z: 0.8542096}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -83,7 +83,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 203208895
-  m_SortingLayer: 4
+  m_SortingLayer: 5
   m_SortingOrder: 0
   m_MaskInteraction: 0
   m_Sprite: {fileID: 1194579902333200216, guid: 373f84c5876d470408d54383a54545fa, type: 3}
@@ -152,7 +152,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: -0.041860104, y: 0.06823844}
+  m_Offset: {x: -0.029699326, y: 0.007434219}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -162,7 +162,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 0.9162798, y: 1.0197731}
+  m_Size: {x: 0.52713203, y: 0.8981646}
   m_EdgeRadius: 0
 --- !u!50 &1078623331509825450
 Rigidbody2D:
@@ -233,3 +233,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cb4122552487f034890ab94c023edf20, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerMovement
+  canvas: {fileID: 0}
