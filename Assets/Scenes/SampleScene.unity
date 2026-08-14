@@ -29527,7 +29527,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_Resource: {fileID: 8300000, guid: 3e58b0abadb651940aed08876c10f103, type: 3}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
@@ -32724,6 +32724,10 @@ PrefabInstance:
       propertyPath: BGM
       value: 
       objectReference: {fileID: 1007878516}
+    - target: {fileID: 7576310624598845687, guid: 72e37a55fa077fe4fa380a145c757d55, type: 3}
+      propertyPath: LoseMusic
+      value: 
+      objectReference: {fileID: 1009596325}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
