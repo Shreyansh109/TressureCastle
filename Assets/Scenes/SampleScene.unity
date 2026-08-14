@@ -32543,10 +32543,6 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 2981611019872110164, guid: 72e37a55fa077fe4fa380a145c757d55, type: 3}
-      propertyPath: canvas
-      value: 
-      objectReference: {fileID: 702892919}
-    - target: {fileID: 2981611019872110164, guid: 72e37a55fa077fe4fa380a145c757d55, type: 3}
       propertyPath: canvasPressClimb
       value: 
       objectReference: {fileID: 702892915}
@@ -32594,6 +32590,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Santiago-player
       objectReference: {fileID: 0}
+    - target: {fileID: 7576310624598845687, guid: 72e37a55fa077fe4fa380a145c757d55, type: 3}
+      propertyPath: BGM
+      value: 
+      objectReference: {fileID: 1007878516}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

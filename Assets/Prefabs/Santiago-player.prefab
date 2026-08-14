@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 1078623331509825450}
   - component: {fileID: 3219940355199029380}
   - component: {fileID: 2981611019872110164}
+  - component: {fileID: 7576310624598845687}
   m_Layer: 0
   m_Name: Santiago-player
   m_TagString: Player
@@ -233,4 +234,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cb4122552487f034890ab94c023edf20, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerMovement
-  canvas: {fileID: 0}
+  canvasPressClimb: {fileID: 0}
+--- !u!114 &7576310624598845687
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5913314406794371725}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2037e6d425b5c984e8aeec382e9c5f0d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::AudioManager
+  BGM: {fileID: 0}

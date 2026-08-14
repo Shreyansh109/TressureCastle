@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class AudioManager : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    [SerializeField] AudioSource BGM;
     void Start()
     {
         
@@ -12,5 +12,13 @@ public class AudioManager : MonoBehaviour
     void Update()
     {
         
+    }
+
+    void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (LayerMask.LayerToName(collision.gameObject.layer) == "Water")
+        {
+            BGM.Pause();
+        }
     }
 }
