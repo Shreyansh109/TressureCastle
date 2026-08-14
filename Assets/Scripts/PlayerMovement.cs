@@ -10,6 +10,7 @@ public class PlayerMovement : MonoBehaviour
     bool isGrounded = false;
     bool isJump;
     bool isLadder = false;
+    bool isPlay;
 
     Rigidbody2D rb;
 
@@ -19,6 +20,7 @@ public class PlayerMovement : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
+        isPlay = true;
     }
 
     void Update()
@@ -30,6 +32,7 @@ public class PlayerMovement : MonoBehaviour
 
     void OnMove(InputValue value)
     {
+        if (!isPlay) return;
         movementInput = value.Get<Vector2>();
         //character flip according to movement direction
         if(movementInput.x > 0)
@@ -50,6 +53,7 @@ public class PlayerMovement : MonoBehaviour
 
     void OnJump(InputValue value)
     {
+        if (!isPlay) return;
         if (isGrounded && value.isPressed)
         {
             rb.linearVelocityY = 7f;
@@ -65,6 +69,7 @@ public class PlayerMovement : MonoBehaviour
 
     void Run()
     {
+        if (!isPlay) return;
         //playerMovement = new Vector2(movementInput.x, 0f);
         rb.linearVelocityX = movementInput.x * 3f;
         // rb.linearVelocityY = 2f;
@@ -120,6 +125,10 @@ public class PlayerMovement : MonoBehaviour
         {
             isLadder = true;
             canvasPressClimb.SetActive(true);
+        }
+        if (LayerMask.LayerToName(collision.gameObject.layer) == "Water")
+        {
+            isPlay = false;
         }
     }
 
