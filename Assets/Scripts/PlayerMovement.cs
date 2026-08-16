@@ -132,6 +132,15 @@ public class PlayerMovement : MonoBehaviour
         }
     }
 
+    void OnTriggerStay2D(Collider2D collision)
+    {
+        if (LayerMask.LayerToName(collision.gameObject.layer) == "Climb")
+        {
+            isLadder = true;
+            canvasPressClimb.SetActive(true);
+        }
+    }
+
     void OnTriggerExit2D(Collider2D collision)
     {
         if (LayerMask.LayerToName(collision.gameObject.layer) == "Climb")
