@@ -53,6 +53,9 @@ TagManager:
   - name: Climb
     uniqueID: 2941419339
     locked: 0
+  - name: Bounce
+    uniqueID: 1587791719
+    locked: 0
   - name: Player
     uniqueID: 203208895
     locked: 0
