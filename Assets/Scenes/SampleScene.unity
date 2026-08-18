@@ -52146,7 +52146,7 @@ CompositeCollider2D:
   m_Enabled: 1
   serializedVersion: 3
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 351c4b025a66ba8479cbe3b98087facd, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -54387,7 +54387,7 @@ GameObject:
   - component: {fileID: 908390481}
   - component: {fileID: 908390480}
   m_Layer: 7
-  m_Name: OutterCollider
+  m_Name: OuterCollider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
