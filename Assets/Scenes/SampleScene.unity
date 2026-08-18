@@ -54030,7 +54030,7 @@ Transform:
   m_GameObject: {fileID: 519420028}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 61.321, y: 2.8600001, z: -10}
+  m_LocalPosition: {x: 37.827, y: 2.767, z: -10}
   m_LocalScale: {x: 0.83029, y: 0.83029, z: 0.83029}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -54823,7 +54823,7 @@ GameObject:
   - component: {fileID: 1136314877}
   - component: {fileID: 1136314876}
   - component: {fileID: 1136314875}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Mushroom
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -54853,7 +54853,7 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1136314873}
-  m_BodyType: 0
+  m_BodyType: 2
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
@@ -55128,7 +55128,7 @@ Transform:
   m_GameObject: {fileID: 1200813938}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 41.024178, y: 11.615881, z: -10}
+  m_LocalPosition: {x: 17.53018, y: 11.522881, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -58147,7 +58147,7 @@ Transform:
   m_GameObject: {fileID: 1961870523}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 41.024178, y: 11.615881, z: -10}
+  m_LocalPosition: {x: 17.53018, y: 11.522881, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -58199,11 +58199,11 @@ PrefabInstance:
       objectReference: {fileID: 702892915}
     - target: {fileID: 4941225920956387734, guid: 72e37a55fa077fe4fa380a145c757d55, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 61.321
+      value: 37.827
       objectReference: {fileID: 0}
     - target: {fileID: 4941225920956387734, guid: 72e37a55fa077fe4fa380a145c757d55, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.5
+      value: 1.407
       objectReference: {fileID: 0}
     - target: {fileID: 4941225920956387734, guid: 72e37a55fa077fe4fa380a145c757d55, type: 3}
       propertyPath: m_LocalPosition.z
