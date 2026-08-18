@@ -112,7 +112,7 @@ public class PlayerMovement : MonoBehaviour
     void OnCollisionEnter2D(Collision2D collision)
     {
         isGrounded = true;
-        isJump = false;
+        //isJump = false;
     }
     void OnCollisionExit2D(Collision2D collision)
     {
