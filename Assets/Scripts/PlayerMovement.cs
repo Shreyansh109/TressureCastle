@@ -129,6 +129,7 @@ public class PlayerMovement : MonoBehaviour
         if (LayerMask.LayerToName(collision.gameObject.layer) == "Water")
         {
             isPlay = false;
+            animator.speed = 0f;
         }
     }
 
