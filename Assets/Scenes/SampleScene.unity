@@ -55246,6 +55246,7 @@ GameObject:
   - component: {fileID: 1264723535}
   - component: {fileID: 1264723534}
   - component: {fileID: 1264723536}
+  - component: {fileID: 1264723537}
   m_Layer: 0
   m_Name: Enemy
   m_TagString: Untagged
@@ -55371,7 +55372,7 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1264723531}
-  m_BodyType: 0
+  m_BodyType: 1
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
@@ -55412,6 +55413,18 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &1264723537
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1264723531}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 70a12dcea7805624fa40d709eb6ab47c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EnemyScript
 --- !u!1 &1312463968
 GameObject:
   m_ObjectHideFlags: 0
