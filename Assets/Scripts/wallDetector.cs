@@ -11,10 +11,13 @@ public class wallDetector : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D collision)
     {
-        enemy.transform.localScale = new Vector3(enemy.transform.localScale.x*-1,
+        if(!collision.gameObject.CompareTag("Player"))
+        {
+            enemy.transform.localScale = new Vector3(enemy.transform.localScale.x*-1,
                                                         enemy.transform.localScale.y,
                                                         enemy.transform.localScale.z);
-        enemyScript.setDirection();
+            enemyScript.setDirection();
+        }
 
     }
 }
