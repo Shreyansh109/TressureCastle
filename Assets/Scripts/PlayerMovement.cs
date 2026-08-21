@@ -111,12 +111,14 @@ public class PlayerMovement : MonoBehaviour
 
     void OnCollisionEnter2D(Collision2D collision)
     {
-        isGrounded = true;
+        if(LayerMask.LayerToName(collision.gameObject.layer) == "Platform" || LayerMask.LayerToName(collision.gameObject.layer) == "Bounce")
+            isGrounded = true;
         //isJump = false;
     }
     void OnCollisionExit2D(Collision2D collision)
     {
-        isGrounded = false;
+        if (LayerMask.LayerToName(collision.gameObject.layer) == "Platform" || LayerMask.LayerToName(collision.gameObject.layer) == "Bounce")
+            isGrounded = false;
     }
 
     void OnTriggerEnter2D(Collider2D collision)
