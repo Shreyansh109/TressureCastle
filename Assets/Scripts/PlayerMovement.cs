@@ -10,7 +10,7 @@ public class PlayerMovement : MonoBehaviour
     bool isGrounded = false;
     bool isJump;
     bool isLadder = false;
-    bool isPlay;
+    bool isAlive = true;
 
     Rigidbody2D rb;
 
@@ -20,7 +20,6 @@ public class PlayerMovement : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
-        isPlay = true;
     }
 
     void Update()
@@ -32,7 +31,7 @@ public class PlayerMovement : MonoBehaviour
 
     void OnMove(InputValue value)
     {
-        if (!isPlay) return;
+        if (!isAlive) return;
         movementInput = value.Get<Vector2>();
         //character flip according to movement direction
         if(movementInput.x > 0)
@@ -53,7 +52,7 @@ public class PlayerMovement : MonoBehaviour
 
     void OnJump(InputValue value)
     {
-        if (!isPlay) return;
+        if (!isAlive) return;
         if (isGrounded && value.isPressed)
         {
             rb.linearVelocityY = 7f;
@@ -69,7 +68,7 @@ public class PlayerMovement : MonoBehaviour
 
     void Run()
     {
-        if (!isPlay) return;
+        if (!isAlive) return;
         //playerMovement = new Vector2(movementInput.x, 0f);
         rb.linearVelocityX = movementInput.x * 3f;
         // rb.linearVelocityY = 2f;
@@ -101,9 +100,9 @@ public class PlayerMovement : MonoBehaviour
             animator.SetBool("isClimbing", true);
             //rb.gravityScale = 0f;
         }
-        else if (isLadder && movementInput.y == 0f && !isJump)
+        else if (isLadder && movementInput.y == 0f)
         {
-            rb.linearVelocityY = 0f;
+            //rb.linearVelocityY = 0f;
             animator.SetBool("isClimbing", false);
             //rb.gravityScale = 0f;
         }
@@ -113,14 +112,12 @@ public class PlayerMovement : MonoBehaviour
     {
         if(LayerMask.LayerToName(collision.gameObject.layer) == "Platform" || LayerMask.LayerToName(collision.gameObject.layer) == "Bounce")
             isGrounded = true;
-            animator.SetBool("isJumping", false);
         //isJump = false;
     }
     void OnCollisionExit2D(Collision2D collision)
     {
         if (LayerMask.LayerToName(collision.gameObject.layer) == "Platform" || LayerMask.LayerToName(collision.gameObject.layer) == "Bounce")
             isGrounded = false;
-            animator.SetBool("isJumping", true);
     }
 
     void OnTriggerEnter2D(Collider2D collision)
@@ -132,7 +129,7 @@ public class PlayerMovement : MonoBehaviour
         }
         if (LayerMask.LayerToName(collision.gameObject.layer) == "Water")
         {
-            isPlay = false;
+            isAlive = false;
             animator.speed = 0f;
         }
     }
