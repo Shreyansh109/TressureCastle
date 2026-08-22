@@ -27,6 +27,7 @@ public class PlayerMovement : MonoBehaviour
         Run();
         Fall();
         Climb();
+        Die();
     }
 
     void OnMove(InputValue value)
@@ -130,7 +131,6 @@ public class PlayerMovement : MonoBehaviour
         if (LayerMask.LayerToName(collision.gameObject.layer) == "Water")
         {
             isAlive = false;
-            animator.speed = 0f;
         }
     }
 
@@ -152,5 +152,11 @@ public class PlayerMovement : MonoBehaviour
             animator.SetBool("isClimbing", false);
             canvasPressClimb.SetActive(false);
         }
+    }
+
+    void Die()
+    {
+        if (!isAlive)
+        animator.SetTrigger("isDie");
     }
 }
