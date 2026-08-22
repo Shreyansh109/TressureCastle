@@ -54446,7 +54446,7 @@ MonoBehaviour:
       LookAtTarget: {fileID: 0}
       CustomLookAtTarget: 0
   DefaultBlend:
-    Style: 1
+    Style: 2
     Time: 0.5
     CustomCurve:
       serializedVersion: 2
@@ -54466,8 +54466,8 @@ MonoBehaviour:
     Camera: {fileID: 1961870524}
     ActivateAfter: 0
     MinDuration: 0
-  - FullHash: 1289518652
-    Camera: {fileID: 1961870524}
+  - FullHash: 329519867
+    Camera: {fileID: 760514920}
     ActivateAfter: 0
     MinDuration: 0
   HashOfParent:
@@ -54476,6 +54476,8 @@ MonoBehaviour:
   - Hash: 1289518652
     HashOfParent: 756556552
   - Hash: 826126193
+    HashOfParent: 756556552
+  - Hash: 329519867
     HashOfParent: 756556552
   m_LegacyLookAt: {fileID: 0}
   m_LegacyFollow: {fileID: 0}
