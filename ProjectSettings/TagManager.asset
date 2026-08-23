@@ -15,7 +15,7 @@ TagManager:
   - Collider
   - Bounce
   - Platform
-  - 
+  - Hazards
   - 
   - 
   - 
@@ -55,6 +55,9 @@ TagManager:
     locked: 0
   - name: Bounce
     uniqueID: 1587791719
+    locked: 0
+  - name: Hazards
+    uniqueID: 2115959847
     locked: 0
   - name: Enemy
     uniqueID: 836279143
