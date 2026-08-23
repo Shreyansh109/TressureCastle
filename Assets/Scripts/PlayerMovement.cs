@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.Rendering.Universal;
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -13,13 +14,16 @@ public class PlayerMovement : MonoBehaviour
     bool isAlive = true;
 
     Rigidbody2D rb;
+    Light2D light;
 
     [SerializeField] GameObject canvasPressClimb;
+    [SerializeField] GameObject globalLight;
 
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
+        light = globalLight.GetComponent<Light2D>();
     }
 
     void Update()
@@ -156,7 +160,12 @@ public class PlayerMovement : MonoBehaviour
 
     void Die()
     {
-        if (!isAlive)
-        animator.SetTrigger("isDie");
+        if (!isAlive){
+            animator.SetTrigger("isDie");
+            if(light.intensity > 0f)
+            {
+                light.intensity -= Time.deltaTime * 0.5f;
+            }
+        }
     }
 }

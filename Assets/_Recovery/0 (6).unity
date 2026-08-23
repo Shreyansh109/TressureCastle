@@ -58319,10 +58319,6 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 2981611019872110164, guid: 72e37a55fa077fe4fa380a145c757d55, type: 3}
-      propertyPath: globalLight
-      value: 
-      objectReference: {fileID: 619394800}
-    - target: {fileID: 2981611019872110164, guid: 72e37a55fa077fe4fa380a145c757d55, type: 3}
       propertyPath: canvasPressClimb
       value: 
       objectReference: {fileID: 702892915}
