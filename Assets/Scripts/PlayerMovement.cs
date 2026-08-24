@@ -14,16 +14,13 @@ public class PlayerMovement : MonoBehaviour
     bool isAlive = true;
 
     Rigidbody2D rb;
-    Light2D light;
 
     [SerializeField] GameObject canvasPressClimb;
-    [SerializeField] GameObject globalLight;
 
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
-        light = globalLight.GetComponent<Light2D>();
     }
 
     void Update()
@@ -31,7 +28,6 @@ public class PlayerMovement : MonoBehaviour
         Run();
         Fall();
         Climb();
-        Die();
     }
 
     void OnMove(InputValue value)
@@ -113,6 +109,11 @@ public class PlayerMovement : MonoBehaviour
         }
     }
 
+    public bool getAlive()
+    {
+        return isAlive;
+    }
+
     void OnCollisionEnter2D(Collision2D collision)
     {
         if(LayerMask.LayerToName(collision.gameObject.layer) == "Platform" || LayerMask.LayerToName(collision.gameObject.layer) == "Bounce")
@@ -155,17 +156,6 @@ public class PlayerMovement : MonoBehaviour
             rb.linearVelocityY = 0f;
             animator.SetBool("isClimbing", false);
             canvasPressClimb.SetActive(false);
-        }
-    }
-
-    void Die()
-    {
-        if (!isAlive){
-            animator.SetTrigger("isDie");
-            if(light.intensity > 0f)
-            {
-                light.intensity -= Time.deltaTime * 0.5f;
-            }
         }
     }
 }

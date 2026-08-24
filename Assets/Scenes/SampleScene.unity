@@ -58999,6 +58999,18 @@ PrefabInstance:
       value: Santiago-player
       objectReference: {fileID: 0}
     - target: {fileID: 7266095019291213179, guid: 72e37a55fa077fe4fa380a145c757d55, type: 3}
+      propertyPath: animator
+      value: 
+      objectReference: {fileID: 1099582294}
+    - target: {fileID: 7266095019291213179, guid: 72e37a55fa077fe4fa380a145c757d55, type: 3}
+      propertyPath: globalLight
+      value: 
+      objectReference: {fileID: 619394800}
+    - target: {fileID: 7266095019291213179, guid: 72e37a55fa077fe4fa380a145c757d55, type: 3}
+      propertyPath: playerMovement
+      value: 
+      objectReference: {fileID: 402759220089673237}
+    - target: {fileID: 7266095019291213179, guid: 72e37a55fa077fe4fa380a145c757d55, type: 3}
       propertyPath: 'healthIcons.Array.data[0]'
       value: 
       objectReference: {fileID: 490434980}
@@ -59023,6 +59035,17 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 72e37a55fa077fe4fa380a145c757d55, type: 3}
+--- !u!114 &402759220089673237 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2981611019872110164, guid: 72e37a55fa077fe4fa380a145c757d55, type: 3}
+  m_PrefabInstance: {fileID: 402759220089673233}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cb4122552487f034890ab94c023edf20, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerMovement
 --- !u!1001 &2634003466188212181
 PrefabInstance:
   m_ObjectHideFlags: 0
