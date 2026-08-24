@@ -15,8 +15,9 @@ GameObject:
   - component: {fileID: 1078623331509825450}
   - component: {fileID: 3219940355199029380}
   - component: {fileID: 2981611019872110164}
+  - component: {fileID: 7266095019291213179}
   - component: {fileID: 7576310624598845687}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Santiago-player
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -84,7 +85,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 203208895
-  m_SortingLayer: 5
+  m_SortingLayer: 8
   m_SortingOrder: 0
   m_MaskInteraction: 0
   m_Sprite: {fileID: 1194579902333200216, guid: 373f84c5876d470408d54383a54545fa, type: 3}
@@ -153,7 +154,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: -0.029699326, y: 0.007434219}
+  m_Offset: {x: -0.06536496, y: 0.016042635}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -163,7 +164,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 0.52713203, y: 0.8981646}
+  m_Size: {x: 0.45580077, y: 0.8809477}
   m_EdgeRadius: 0
 --- !u!50 &1078623331509825450
 Rigidbody2D:
@@ -235,6 +236,23 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerMovement
   canvasPressClimb: {fileID: 0}
+  globalLight: {fileID: 0}
+--- !u!114 &7266095019291213179
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5913314406794371725}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 12dd74aadde2a0348a23c6a1b7c616e2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Health
+  healthIcons:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!114 &7576310624598845687
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -248,3 +266,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::AudioManager
   BGM: {fileID: 0}
+  LoseMusic: {fileID: 0}

@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 7766453781297430221}
   - component: {fileID: 269031607497073549}
   - component: {fileID: 162260046402006708}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Enemy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -84,7 +84,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 836279143
-  m_SortingLayer: 6
+  m_SortingLayer: 7
   m_SortingOrder: 0
   m_MaskInteraction: 0
   m_Sprite: {fileID: 617764662413310538, guid: 4a478206fbca6ba448733e2e25460343, type: 3}
@@ -205,7 +205,7 @@ GameObject:
   - component: {fileID: 4073469078956913953}
   - component: {fileID: 6942344306117826056}
   - component: {fileID: 4930926291854025799}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: wallTrigger
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -297,7 +297,7 @@ GameObject:
   - component: {fileID: 6850604968421838485}
   - component: {fileID: 6941718421273021023}
   - component: {fileID: 6374881793003157323}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: platformTrigger
   m_TagString: Untagged
   m_Icon: {fileID: 0}
