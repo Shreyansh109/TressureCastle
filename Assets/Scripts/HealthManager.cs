@@ -10,6 +10,7 @@ public class Health : MonoBehaviour
     [SerializeField] GameObject globalLight;
     [SerializeField] Animator animator;
     [SerializeField] PlayerMovement playerMovement;
+    [SerializeField] ParticleSystem particleSystem;
 
     void Start()
     {
@@ -27,6 +28,7 @@ public class Health : MonoBehaviour
         {
             currentHealth--;
             healthIcons[currentHealth].SetActive(false);
+            particleSystem.Play();
         }
     }
 
