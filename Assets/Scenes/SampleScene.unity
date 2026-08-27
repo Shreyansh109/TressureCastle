@@ -59004,6 +59004,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1078623331509825450, guid: 72e37a55fa077fe4fa380a145c757d55, type: 3}
+      propertyPath: m_CollisionDetection
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1548126972128856465, guid: 72e37a55fa077fe4fa380a145c757d55, type: 3}
+      propertyPath: m_Size.y
+      value: 0.89510506
+      objectReference: {fileID: 0}
+    - target: {fileID: 1548126972128856465, guid: 72e37a55fa077fe4fa380a145c757d55, type: 3}
+      propertyPath: m_Offset.y
+      value: 0.018348353
+      objectReference: {fileID: 0}
     - target: {fileID: 2981611019872110164, guid: 72e37a55fa077fe4fa380a145c757d55, type: 3}
       propertyPath: canvasPressClimb
       value: 
@@ -59051,6 +59063,22 @@ PrefabInstance:
     - target: {fileID: 5913314406794371725, guid: 72e37a55fa077fe4fa380a145c757d55, type: 3}
       propertyPath: m_Name
       value: Santiago-player
+      objectReference: {fileID: 0}
+    - target: {fileID: 6022325326629654986, guid: 72e37a55fa077fe4fa380a145c757d55, type: 3}
+      propertyPath: m_Size.y
+      value: 0.10965705
+      objectReference: {fileID: 0}
+    - target: {fileID: 6022325326629654986, guid: 72e37a55fa077fe4fa380a145c757d55, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6022325326629654986, guid: 72e37a55fa077fe4fa380a145c757d55, type: 3}
+      propertyPath: m_Offset.y
+      value: -0.38708925
+      objectReference: {fileID: 0}
+    - target: {fileID: 6022325326629654986, guid: 72e37a55fa077fe4fa380a145c757d55, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7266095019291213179, guid: 72e37a55fa077fe4fa380a145c757d55, type: 3}
       propertyPath: globalLight
