@@ -15,6 +15,7 @@ public class PlayerMovement : MonoBehaviour
 
     Rigidbody2D rb;
 
+
     [SerializeField] GameObject canvasPressClimb;
 
     void Start()
@@ -114,17 +115,6 @@ public class PlayerMovement : MonoBehaviour
         return isAlive;
     }
 
-    void OnCollisionEnter2D(Collision2D collision)
-    {
-        if(LayerMask.LayerToName(collision.gameObject.layer) == "Platform" || LayerMask.LayerToName(collision.gameObject.layer) == "Bounce")
-            isGrounded = true;
-        //isJump = false;
-    }
-    void OnCollisionExit2D(Collision2D collision)
-    {
-        if (LayerMask.LayerToName(collision.gameObject.layer) == "Platform" || LayerMask.LayerToName(collision.gameObject.layer) == "Bounce")
-            isGrounded = false;
-    }
 
     void OnTriggerEnter2D(Collider2D collision)
     {
@@ -136,6 +126,11 @@ public class PlayerMovement : MonoBehaviour
         if (LayerMask.LayerToName(collision.gameObject.layer) == "Water")
         {
             isAlive = false;
+        }
+        if (LayerMask.LayerToName(collision.gameObject.layer) == "Platform" ||
+            LayerMask.LayerToName(collision.gameObject.layer) == "Bounce")
+        {
+            isGrounded = true;
         }
     }
 
@@ -156,6 +151,11 @@ public class PlayerMovement : MonoBehaviour
             rb.linearVelocityY = 0f;
             animator.SetBool("isClimbing", false);
             canvasPressClimb.SetActive(false);
+        }
+        if (LayerMask.LayerToName(collision.gameObject.layer) == "Platform" ||
+            LayerMask.LayerToName(collision.gameObject.layer) == "Bounce")
+        {
+            isGrounded = false;
         }
     }
 }
