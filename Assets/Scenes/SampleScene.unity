@@ -59065,16 +59065,24 @@ PrefabInstance:
       value: Santiago-player
       objectReference: {fileID: 0}
     - target: {fileID: 6022325326629654986, guid: 72e37a55fa077fe4fa380a145c757d55, type: 3}
+      propertyPath: m_Size.x
+      value: 0.44125304
+      objectReference: {fileID: 0}
+    - target: {fileID: 6022325326629654986, guid: 72e37a55fa077fe4fa380a145c757d55, type: 3}
       propertyPath: m_Size.y
-      value: 0.10965705
+      value: 0.12331948
       objectReference: {fileID: 0}
     - target: {fileID: 6022325326629654986, guid: 72e37a55fa077fe4fa380a145c757d55, type: 3}
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6022325326629654986, guid: 72e37a55fa077fe4fa380a145c757d55, type: 3}
+      propertyPath: m_Offset.x
+      value: -0.06696902
+      objectReference: {fileID: 0}
+    - target: {fileID: 6022325326629654986, guid: 72e37a55fa077fe4fa380a145c757d55, type: 3}
       propertyPath: m_Offset.y
-      value: -0.38708925
+      value: -0.39392048
       objectReference: {fileID: 0}
     - target: {fileID: 6022325326629654986, guid: 72e37a55fa077fe4fa380a145c757d55, type: 3}
       propertyPath: m_IsTrigger

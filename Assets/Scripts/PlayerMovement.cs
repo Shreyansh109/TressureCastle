@@ -132,6 +132,10 @@ public class PlayerMovement : MonoBehaviour
         {
             isGrounded = true;
         }
+        if (LayerMask.LayerToName(collision.gameObject.layer) == "Enemy")
+        {
+            Destroy(collision.gameObject, 0.1f);
+        }
     }
 
     void OnTriggerStay2D(Collider2D collision)
