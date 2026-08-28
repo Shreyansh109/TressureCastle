@@ -115,6 +115,12 @@ public class PlayerMovement : MonoBehaviour
         return isAlive;
     }
 
+    public void setGrounded(bool grounded)
+    {
+        isGrounded = grounded;
+
+    }
+
 
     void OnTriggerEnter2D(Collider2D collision)
     {
@@ -126,11 +132,6 @@ public class PlayerMovement : MonoBehaviour
         if (LayerMask.LayerToName(collision.gameObject.layer) == "Water")
         {
             isAlive = false;
-        }
-        if (LayerMask.LayerToName(collision.gameObject.layer) == "Platform" ||
-            LayerMask.LayerToName(collision.gameObject.layer) == "Bounce")
-        {
-            isGrounded = true;
         }
         if (LayerMask.LayerToName(collision.gameObject.layer) == "Enemy")
         {
@@ -155,11 +156,6 @@ public class PlayerMovement : MonoBehaviour
             rb.linearVelocityY = 0f;
             animator.SetBool("isClimbing", false);
             canvasPressClimb.SetActive(false);
-        }
-        if (LayerMask.LayerToName(collision.gameObject.layer) == "Platform" ||
-            LayerMask.LayerToName(collision.gameObject.layer) == "Bounce")
-        {
-            isGrounded = false;
         }
     }
 }

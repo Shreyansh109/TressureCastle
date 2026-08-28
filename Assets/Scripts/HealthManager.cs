@@ -5,6 +5,7 @@ public class Health : MonoBehaviour
 {
     private short currentHealth = 3;
     Light2D light;
+    BoxCollider2D playerCollider;
 
     [SerializeField] private GameObject[] healthIcons;
     [SerializeField] GameObject globalLight;
@@ -15,6 +16,7 @@ public class Health : MonoBehaviour
     void Start()
     {
         light = globalLight.GetComponent<Light2D>();
+        playerCollider = GetComponent<BoxCollider2D>();
     }
 
     void Update()
@@ -24,7 +26,7 @@ public class Health : MonoBehaviour
     
     void hitHealth()
     {
-        if (currentHealth > 0)
+        if (currentHealth > 0 && !playerCollider.IsTouchingLayers(LayerMask.GetMask("Enemy")))
         {
             currentHealth--;
             healthIcons[currentHealth].SetActive(false);
@@ -46,7 +48,7 @@ public class Health : MonoBehaviour
     void OnCollisionEnter2D(Collision2D collision)
     {
         if (LayerMask.LayerToName(collision.gameObject.layer) == "Enemy" ||
-            LayerMask.LayerToName(collision.gameObject.layer) == "Hazards")
+            LayerMask.LayerToName(collision.gameObject.layer) == "Hazards") 
         {
             hitHealth();
         }
