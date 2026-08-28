@@ -47,13 +47,14 @@ public class Health : MonoBehaviour
 
     void OnCollisionEnter2D(Collision2D collision)
     {
-        if (LayerMask.LayerToName(collision.gameObject.layer) == "Enemy" ||
-            LayerMask.LayerToName(collision.gameObject.layer) == "Hazards") 
+        if (LayerMask.LayerToName(collision.gameObject.layer) == "Hazards") 
         {
             hitHealth();
         }
-        else
+        else if (LayerMask.LayerToName(collision.gameObject.layer) == "Enemy" && !playerCollider.IsTouchingLayers(LayerMask.GetMask("Enemy")))
         {
+            playerMovement.setAlive(false);
+            currentHealth = 0;
             Die();
         }
     }

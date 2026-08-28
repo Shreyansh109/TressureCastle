@@ -115,6 +115,11 @@ public class PlayerMovement : MonoBehaviour
         return isAlive;
     }
 
+    public void setAlive(bool alive)
+    {
+        isAlive = alive;
+    }
+
     public void setGrounded(bool grounded)
     {
         isGrounded = grounded;
