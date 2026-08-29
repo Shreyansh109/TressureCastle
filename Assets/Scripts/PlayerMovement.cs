@@ -82,7 +82,7 @@ public class PlayerMovement : MonoBehaviour
         //character fall down when not grounded, by increasing the downward velocity
         if (!isGrounded && !isJump && !isLadder)
         {
-            rb.linearVelocityY = -5f;
+            rb.linearVelocityY = -7f;
         }else if(isGrounded && !isJump && !isLadder)
         {
             rb.linearVelocityY = 0f;
