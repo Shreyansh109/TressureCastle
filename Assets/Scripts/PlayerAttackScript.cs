@@ -2,24 +2,24 @@ using UnityEngine;
 
 public class PlayerAttackScript : MonoBehaviour
 {
-    BoxCollider2D attackCollider;
+    BoxCollider2D feetCollider;
     PlayerMovement playerMovement;
 
     void Start()
     {
-        attackCollider = GetComponent<BoxCollider2D>();
+        feetCollider = GetComponent<BoxCollider2D>();
         playerMovement = GetComponent<PlayerMovement>();
     }
 
 
     void OnCollisionEnter2D(Collision2D collision)
     {
-        if (LayerMask.LayerToName(collision.gameObject.layer) == "Platform" ||
-            LayerMask.LayerToName(collision.gameObject.layer) == "Bounce")
+        if (feetCollider.IsTouchingLayers(LayerMask.GetMask("Platform")) ||
+            feetCollider.IsTouchingLayers(LayerMask.GetMask("Bounce")))
         {
             playerMovement.setGrounded(true);
         }
-        else if(attackCollider.IsTouchingLayers(LayerMask.GetMask("Enemy")))
+        else if(feetCollider.IsTouchingLayers(LayerMask.GetMask("Enemy")))
         {
             Destroy(collision.gameObject, 0.1f);
         }
@@ -27,9 +27,10 @@ public class PlayerAttackScript : MonoBehaviour
 
     void OnCollisionExit2D(Collision2D collision)
     {
-        if (LayerMask.LayerToName(collision.gameObject.layer) == "Platform" ||
-            LayerMask.LayerToName(collision.gameObject.layer) == "Bounce")
+        if (!feetCollider.IsTouchingLayers(LayerMask.GetMask("Platform")) ||
+            !feetCollider.IsTouchingLayers(LayerMask.GetMask("Bounce")))
         {
+            print("Player is no longer grounded");
             playerMovement.setGrounded(false);
         }
     }

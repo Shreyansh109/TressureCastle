@@ -58,6 +58,7 @@ public class PlayerMovement : MonoBehaviour
         if (isGrounded && value.isPressed)
         {
             rb.linearVelocityY = 7f;
+            print(isGrounded);
             isJump = true;
         }
 
