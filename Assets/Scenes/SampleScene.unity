@@ -59083,11 +59083,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6022325326629654986, guid: 72e37a55fa077fe4fa380a145c757d55, type: 3}
       propertyPath: m_Size.x
-      value: 0.44125304
+      value: 0.32956877
       objectReference: {fileID: 0}
     - target: {fileID: 6022325326629654986, guid: 72e37a55fa077fe4fa380a145c757d55, type: 3}
       propertyPath: m_Size.y
-      value: 0.09300044
+      value: 0.09300041
       objectReference: {fileID: 0}
     - target: {fileID: 6022325326629654986, guid: 72e37a55fa077fe4fa380a145c757d55, type: 3}
       propertyPath: m_Enabled
@@ -59095,7 +59095,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6022325326629654986, guid: 72e37a55fa077fe4fa380a145c757d55, type: 3}
       propertyPath: m_Offset.x
-      value: -0.06696902
+      value: -0.07110655
       objectReference: {fileID: 0}
     - target: {fileID: 6022325326629654986, guid: 72e37a55fa077fe4fa380a145c757d55, type: 3}
       propertyPath: m_Offset.y
@@ -59188,6 +59188,14 @@ PrefabInstance:
     - target: {fileID: 5888581853938205376, guid: d2c8aaed2680f024f91b185679c40585, type: 3}
       propertyPath: m_Name
       value: Enemy
+      objectReference: {fileID: 0}
+    - target: {fileID: 6248489794527261260, guid: d2c8aaed2680f024f91b185679c40585, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8512996443728092787, guid: d2c8aaed2680f024f91b185679c40585, type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

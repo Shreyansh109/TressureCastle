@@ -38,6 +38,10 @@ public class Health : MonoBehaviour
     {
         if (!playerMovement.getAlive() || currentHealth <= 0){
             animator.SetTrigger("isDie");
+            for (int i =  healthIcons.Length-1; i >= 0; i--)
+            {
+                healthIcons[i].SetActive(false);
+            }
             if(light.intensity > 0f)
             {
                 light.intensity -= Time.deltaTime * 0.5f;
@@ -53,6 +57,7 @@ public class Health : MonoBehaviour
         }
         else if (LayerMask.LayerToName(collision.gameObject.layer) == "Enemy" && !playerCollider.IsTouchingLayers(LayerMask.GetMask("Enemy")))
         {
+            print("Player hit by enemy");
             playerMovement.setAlive(false);
             currentHealth = 0;
             Die();

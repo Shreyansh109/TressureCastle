@@ -19,7 +19,7 @@ public class PlayerAttackScript : MonoBehaviour
         {
             playerMovement.setGrounded(true);
         }
-        if(attackCollider.IsTouchingLayers(LayerMask.GetMask("Enemy")))
+        else if(attackCollider.IsTouchingLayers(LayerMask.GetMask("Enemy")))
         {
             Destroy(collision.gameObject, 0.1f);
         }
