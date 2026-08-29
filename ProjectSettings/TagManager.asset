@@ -62,6 +62,9 @@ TagManager:
   - name: Enemy
     uniqueID: 836279143
     locked: 0
+  - name: Coin
+    uniqueID: 220943753
+    locked: 0
   - name: Player
     uniqueID: 203208895
     locked: 0
