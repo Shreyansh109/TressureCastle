@@ -149,22 +149,12 @@ TextureImporter:
     outline: []
     customData: 
     physicsShape:
-    - - {x: 14, y: -14}
+    - - {x: 14, y: -16}
+      - {x: 14, y: -14}
       - {x: 10, y: 1}
-      - {x: 9.056, y: 1}
-      - {x: 9, y: 1}
-      - {x: 3, y: -14}
-      - {x: 3, y: -16}
-      - {x: 14, y: -16}
-    - - {x: 0, y: -13}
-      - {x: -5, y: 0}
       - {x: -6, y: 0}
       - {x: -13, y: -13}
       - {x: -14, y: -16}
-      - {x: 0, y: -16}
-    - - {x: 9, y: 1}
-      - {x: 9, y: 1}
-      - {x: 9, y: 1}
     bones: []
     spriteID: ad09a9fae81a1e742a9ea6419b6910e8
     internalID: -2087967921
