@@ -2,6 +2,7 @@ using UnityEngine;
 
 public class PlayerAttackScript : MonoBehaviour
 {
+    [SerializeField] private ParticleSystem enemyDiePS;
     BoxCollider2D feetCollider;
     PlayerMovement playerMovement;
 
@@ -21,6 +22,11 @@ public class PlayerAttackScript : MonoBehaviour
         }
         else if(feetCollider.IsTouchingLayers(LayerMask.GetMask("Enemy")))
         {
+            if (enemyDiePS != null)
+            {
+                print("Particle Play!!");
+                enemyDiePS.Play();
+            }
             Destroy(collision.gameObject, 0.1f);
         }
     }
@@ -30,7 +36,6 @@ public class PlayerAttackScript : MonoBehaviour
         if (!feetCollider.IsTouchingLayers(LayerMask.GetMask("Platform")) ||
             !feetCollider.IsTouchingLayers(LayerMask.GetMask("Bounce")))
         {
-            print("Player is no longer grounded");
             playerMovement.setGrounded(false);
         }
     }
