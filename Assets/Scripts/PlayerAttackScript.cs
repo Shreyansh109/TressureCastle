@@ -24,10 +24,18 @@ public class PlayerAttackScript : MonoBehaviour
         {
             if (enemyDiePS != null)
             {
-                print("Particle Play!!");
                 enemyDiePS.Play();
             }
             Destroy(collision.gameObject, 0.1f);
+        }
+    }
+
+    void OnCollisionStay2D(Collision2D collision)
+    {
+        if (feetCollider.IsTouchingLayers(LayerMask.GetMask("Platform")) ||
+            feetCollider.IsTouchingLayers(LayerMask.GetMask("Bounce")))
+        {
+            playerMovement.setGrounded(true);
         }
     }
 
