@@ -36,14 +36,9 @@ public class PlayerMovement : MonoBehaviour
         if (!isAlive) return;
         movementInput = value.Get<Vector2>();
         //character flip according to movement direction
-        if(movementInput.x > 0)
+        if(movementInput.x != 0)
         {
-            GetComponent<SpriteRenderer>().flipX = false;
-            animator.SetBool("isRunning", true);
-        }
-        else if(movementInput.x < 0)
-        {
-            GetComponent<SpriteRenderer>().flipX = true;
+            ChangeDirection(value);
             animator.SetBool("isRunning", true);
         }
         else
@@ -66,6 +61,17 @@ public class PlayerMovement : MonoBehaviour
         {
             isJump = false;
             print("isJump: " + isJump);
+        }
+    }
+
+    void ChangeDirection(InputValue value)
+    {
+        movementInput = value.Get<Vector2>();
+        if(movementInput.x != 0 && (gameObject.transform.localScale.x / movementInput.x) <0)
+        {
+            gameObject.transform.localScale = new Vector3(-gameObject.transform.localScale.x,
+                                                           gameObject.transform.localScale.y,
+                                                           gameObject.transform.localScale.z);
         }
     }
 
