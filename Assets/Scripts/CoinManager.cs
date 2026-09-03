@@ -4,6 +4,7 @@ using TMPro;
 public class CoinManager : MonoBehaviour
 {
     [SerializeField] private TMP_Text coinText;
+    [SerializeField] private AudioSource coinSound;
     private int coinCount = 0;
 
     void Start()
@@ -27,6 +28,7 @@ public class CoinManager : MonoBehaviour
         if(LayerMask.LayerToName(other.gameObject.layer) == "Coin")
         {
             AddCoin(1);
+            coinSound.Play();
             Destroy(other.gameObject);
         }
     }
