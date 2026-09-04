@@ -208,18 +208,18 @@ AudioSource:
   m_audioClip: {fileID: 0}
   m_Resource: {fileID: 8300000, guid: 0f8fc97fbb7511041a6fd88366c3a30b, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.496
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
   Priority: 128
-  DopplerLevel: 1
-  MinDistance: 0.08676672
-  MaxDistance: 0.51861715
+  DopplerLevel: 0
+  MinDistance: 0.5
+  MaxDistance: 6.7182827
   Pan2D: 0
-  rolloffMode: 0
+  rolloffMode: 2
   BypassEffects: 0
   BypassListenerEffects: 0
   BypassReverbZones: 0
@@ -227,10 +227,37 @@ AudioSource:
     serializedVersion: 2
     m_Curve:
     - serializedVersion: 3
-      time: 0
+      time: 0.08361526
       value: 1
-      inSlope: 0
-      outSlope: 0
+      inSlope: -1.5135272
+      outSlope: -1.5135272
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0.35397458
+    - serializedVersion: 3
+      time: 0.65455747
+      value: 0.20733637
+      inSlope: -3.6903327
+      outSlope: -3.6903327
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.1483952
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 0.6687351
+      value: 0.18550482
+      inSlope: -0.24527475
+      outSlope: -0.24527475
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 0.9647095
+      value: 0.10867196
+      inSlope: -1.0912447
+      outSlope: -1.0912447
       tangentMode: 0
       weightedMode: 0
       inWeight: 0.33333334
@@ -238,12 +265,12 @@ AudioSource:
     - serializedVersion: 3
       time: 1
       value: 0
-      inSlope: 0
-      outSlope: 0
+      inSlope: -1.0912447
+      outSlope: -1.0912447
       tangentMode: 0
       weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
+      inWeight: 0
+      outWeight: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
@@ -252,7 +279,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 0
+      value: 1
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -303,7 +330,7 @@ GameObject:
   - component: {fileID: 4073469078956913953}
   - component: {fileID: 6942344306117826056}
   - component: {fileID: 4930926291854025799}
-  m_Layer: 11
+  m_Layer: 0
   m_Name: wallTrigger
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -395,7 +422,7 @@ GameObject:
   - component: {fileID: 6850604968421838485}
   - component: {fileID: 6941718421273021023}
   - component: {fileID: 6374881793003157323}
-  m_Layer: 11
+  m_Layer: 0
   m_Name: platformTrigger
   m_TagString: Untagged
   m_Icon: {fileID: 0}

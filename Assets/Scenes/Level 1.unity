@@ -55896,6 +55896,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::CoinManager
   coinText: {fileID: 639723125}
   coinSound: {fileID: 1015354332}
+--- !u!81 &1099582305
+AudioListener:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 923795504}
+  m_Enabled: 1
 --- !u!1001 &1135474477
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -61308,6 +61316,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 5913314406794371725, guid: 72e37a55fa077fe4fa380a145c757d55, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1099582296}
+    - targetCorrespondingSourceObject: {fileID: 5913314406794371725, guid: 72e37a55fa077fe4fa380a145c757d55, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1099582305}
   m_SourcePrefab: {fileID: 100100000, guid: 72e37a55fa077fe4fa380a145c757d55, type: 3}
 --- !u!1001 &1895363952293349194
 PrefabInstance:
@@ -61392,15 +61403,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 606414643378413904, guid: d2c8aaed2680f024f91b185679c40585, type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 606414643378413904, guid: d2c8aaed2680f024f91b185679c40585, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 606414643378413904, guid: d2c8aaed2680f024f91b185679c40585, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 606414643378413904, guid: d2c8aaed2680f024f91b185679c40585, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -61417,14 +61428,6 @@ PrefabInstance:
     - target: {fileID: 5888581853938205376, guid: d2c8aaed2680f024f91b185679c40585, type: 3}
       propertyPath: m_Name
       value: Enemy
-      objectReference: {fileID: 0}
-    - target: {fileID: 6248489794527261260, guid: d2c8aaed2680f024f91b185679c40585, type: 3}
-      propertyPath: m_Layer
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8512996443728092787, guid: d2c8aaed2680f024f91b185679c40585, type: 3}
-      propertyPath: m_Layer
-      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -61619,7 +61622,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Main Camera
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 7594321895427400262, guid: d1e506175ad3bf848b2be096169ef998, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
