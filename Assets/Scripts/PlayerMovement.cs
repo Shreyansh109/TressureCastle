@@ -133,6 +133,11 @@ public class PlayerMovement : MonoBehaviour
 
     }
 
+    public bool getJump()
+    {
+        return isJump;
+    }
+
 
     void OnTriggerEnter2D(Collider2D collision)
     {
