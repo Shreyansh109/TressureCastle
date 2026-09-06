@@ -9,9 +9,19 @@ public class AudioManager : MonoBehaviour
     [Header("Component References")]
     [SerializeField] PlayerMovement playerMovement;
 
+    [Header("Environment Sound")]
+    [SerializeField] AudioSource DeathAudioSource;
+
     [Header("Player Sound")]
     [SerializeField] AudioSource playerAudioSource;
     [SerializeField] AudioClip jumpSound;
+
+    bool DieSFXplayed = false;
+
+    void Update()
+    {
+        DieSFX();
+    }
 
     void OnTriggerEnter2D(Collider2D collision)
     {
@@ -28,6 +38,15 @@ public class AudioManager : MonoBehaviour
         {
             playerAudioSource.PlayOneShot(jumpSound);
         }
+    }
+
+    void DieSFX()
+    {
+        if(!playerMovement.getAlive() && !DieSFXplayed)
+        {
+            DeathAudioSource.Play();
+            DieSFXplayed = true;
+        }else return;
     }
 
 }
