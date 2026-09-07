@@ -364,6 +364,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6680092983395732664, guid: a0ff333a8cb14c44e9bb3db9370b1d2c, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -10.476225
+      objectReference: {fileID: 0}
+    - target: {fileID: 6680092983395732664, guid: a0ff333a8cb14c44e9bb3db9370b1d2c, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 17.33174
+      objectReference: {fileID: 0}
     - target: {fileID: 7021842215285685730, guid: a0ff333a8cb14c44e9bb3db9370b1d2c, type: 3}
       propertyPath: BoundingShape2D
       value: 
@@ -376,6 +384,10 @@ PrefabInstance:
       propertyPath: BoundingShape2D
       value: 
       objectReference: {fileID: 721339669}
+    - target: {fileID: 9198933801170148611, guid: a0ff333a8cb14c44e9bb3db9370b1d2c, type: 3}
+      propertyPath: Target.TrackingTarget
+      value: 
+      objectReference: {fileID: 1288402345}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -427,6 +439,11 @@ Grid:
   m_CellGap: {x: 0, y: 0, z: 0}
   m_CellLayout: 0
   m_CellSwizzle: 0
+--- !u!4 &1288402345 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4941225920956387734, guid: 72e37a55fa077fe4fa380a145c757d55, type: 3}
+  m_PrefabInstance: {fileID: 1383969058}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1383969058
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4210,11 +4227,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1276867823825908881, guid: d1e506175ad3bf848b2be096169ef998, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -4.5283394
+      value: -6.196009
       objectReference: {fileID: 0}
     - target: {fileID: 1276867823825908881, guid: d1e506175ad3bf848b2be096169ef998, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 15.228531
+      value: 14.79455
       objectReference: {fileID: 0}
     - target: {fileID: 1276867823825908881, guid: d1e506175ad3bf848b2be096169ef998, type: 3}
       propertyPath: m_LocalPosition.z
