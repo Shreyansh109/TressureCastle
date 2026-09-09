@@ -1498,9 +1498,37 @@ PrefabInstance:
       propertyPath: BoundingShape2D
       value: 
       objectReference: {fileID: 721339669}
+    - target: {fileID: 1333354459439366402, guid: a0ff333a8cb14c44e9bb3db9370b1d2c, type: 3}
+      propertyPath: Target.TrackingTarget
+      value: 
+      objectReference: {fileID: 1288402345}
+    - target: {fileID: 1788862836253288004, guid: a0ff333a8cb14c44e9bb3db9370b1d2c, type: 3}
+      propertyPath: AnimatedTarget
+      value: 
+      objectReference: {fileID: 1875134939}
     - target: {fileID: 1788862836253288004, guid: a0ff333a8cb14c44e9bb3db9370b1d2c, type: 3}
       propertyPath: HashOfParent.Array.size
-      value: 0
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1788862836253288004, guid: a0ff333a8cb14c44e9bb3db9370b1d2c, type: 3}
+      propertyPath: HashOfParent.Array.data[4].Hash
+      value: 634529067
+      objectReference: {fileID: 0}
+    - target: {fileID: 1788862836253288004, guid: a0ff333a8cb14c44e9bb3db9370b1d2c, type: 3}
+      propertyPath: HashOfParent.Array.data[4].HashOfParent
+      value: 756556552
+      objectReference: {fileID: 0}
+    - target: {fileID: 2624832917685313571, guid: a0ff333a8cb14c44e9bb3db9370b1d2c, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -10.476225
+      objectReference: {fileID: 0}
+    - target: {fileID: 2624832917685313571, guid: a0ff333a8cb14c44e9bb3db9370b1d2c, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 17.33174
+      objectReference: {fileID: 0}
+    - target: {fileID: 2624832917685313571, guid: a0ff333a8cb14c44e9bb3db9370b1d2c, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -10
       objectReference: {fileID: 0}
     - target: {fileID: 3781721379751771914, guid: a0ff333a8cb14c44e9bb3db9370b1d2c, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1542,6 +1570,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4306826516012793126, guid: a0ff333a8cb14c44e9bb3db9370b1d2c, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -10.476225
+      objectReference: {fileID: 0}
+    - target: {fileID: 4306826516012793126, guid: a0ff333a8cb14c44e9bb3db9370b1d2c, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 17.33174
+      objectReference: {fileID: 0}
+    - target: {fileID: 4306826516012793126, guid: a0ff333a8cb14c44e9bb3db9370b1d2c, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -10
+      objectReference: {fileID: 0}
     - target: {fileID: 6680092983395732664, guid: a0ff333a8cb14c44e9bb3db9370b1d2c, type: 3}
       propertyPath: m_LocalPosition.x
       value: -10.476225
@@ -1562,6 +1602,10 @@ PrefabInstance:
       propertyPath: BoundingShape2D
       value: 
       objectReference: {fileID: 721339669}
+    - target: {fileID: 9191861948092321194, guid: a0ff333a8cb14c44e9bb3db9370b1d2c, type: 3}
+      propertyPath: Target.TrackingTarget
+      value: 
+      objectReference: {fileID: 1288402345}
     - target: {fileID: 9198933801170148611, guid: a0ff333a8cb14c44e9bb3db9370b1d2c, type: 3}
       propertyPath: Target.TrackingTarget
       value: 
@@ -5584,6 +5628,11 @@ PrefabInstance:
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5295137283260136211, guid: e44913f227e154349973af2dd7b277df, type: 3}
   m_PrefabInstance: {fileID: 365014199}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &1875134939 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 340607684582795138, guid: 72e37a55fa077fe4fa380a145c757d55, type: 3}
+  m_PrefabInstance: {fileID: 1383969058}
   m_PrefabAsset: {fileID: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
