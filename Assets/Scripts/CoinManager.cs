@@ -28,7 +28,7 @@ public class CoinManager : MonoBehaviour
         if(LayerMask.LayerToName(other.gameObject.layer) == "Coin")
         {
             AddCoin(1);
-            coinSound.Play();
+            if(!coinSound.isPlaying) coinSound.Play();
             Destroy(other.gameObject);
         }
     }
