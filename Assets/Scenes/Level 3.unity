@@ -18348,7 +18348,7 @@ TilemapRenderer:
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 900703513
-  m_SortingLayer: 3
+  m_SortingLayer: 4
   m_SortingOrder: 0
   m_MaskInteraction: 0
   m_ChunkSize: {x: 32, y: 32, z: 32}
@@ -53577,7 +53577,7 @@ TilemapRenderer:
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: -1353547957
-  m_SortingLayer: 4
+  m_SortingLayer: 5
   m_SortingOrder: 0
   m_MaskInteraction: 0
   m_ChunkSize: {x: 32, y: 32, z: 32}
@@ -55667,7 +55667,7 @@ TilemapRenderer:
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 1587791719
-  m_SortingLayer: 5
+  m_SortingLayer: 6
   m_SortingOrder: 0
   m_MaskInteraction: 0
   m_ChunkSize: {x: 32, y: 32, z: 32}
@@ -58633,7 +58633,7 @@ TilemapRenderer:
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 2115959847
-  m_SortingLayer: 6
+  m_SortingLayer: 7
   m_SortingOrder: 0
   m_MaskInteraction: 0
   m_ChunkSize: {x: 32, y: 32, z: 32}
@@ -59634,6 +59634,10 @@ PrefabInstance:
       propertyPath: coinSound
       value: 
       objectReference: {fileID: 1015354332}
+    - target: {fileID: 836725886625205717, guid: 72e37a55fa077fe4fa380a145c757d55, type: 3}
+      propertyPath: coinHandler
+      value: 
+      objectReference: {fileID: 11400000, guid: 69149247b3df62b489361a04061c8475, type: 2}
     - target: {fileID: 2981611019872110164, guid: 72e37a55fa077fe4fa380a145c757d55, type: 3}
       propertyPath: canvasPressClimb
       value: 
@@ -59896,11 +59900,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1276867823825908881, guid: d1e506175ad3bf848b2be096169ef998, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -3.0889268
+      value: 2.8970125
       objectReference: {fileID: 0}
     - target: {fileID: 1276867823825908881, guid: d1e506175ad3bf848b2be096169ef998, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.05037
+      value: 0.05074
       objectReference: {fileID: 0}
     - target: {fileID: 1276867823825908881, guid: d1e506175ad3bf848b2be096169ef998, type: 3}
       propertyPath: m_LocalPosition.z

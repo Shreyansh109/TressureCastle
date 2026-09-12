@@ -4670,6 +4670,37 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3914d6af0c39e084ca03c34db2e9559d, type: 3}
+--- !u!1 &567666275
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 567666276}
+  m_Layer: 0
+  m_Name: ScriptableObjects
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &567666276
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 567666275}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -1.84417, y: -0.22357, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &608793910
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8371,7 +8402,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1276867823825908881, guid: d1e506175ad3bf848b2be096169ef998, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -3.4637365
+      value: 2.5222178
       objectReference: {fileID: 0}
     - target: {fileID: 1276867823825908881, guid: d1e506175ad3bf848b2be096169ef998, type: 3}
       propertyPath: m_LocalPosition.y
@@ -9005,6 +9036,10 @@ PrefabInstance:
       propertyPath: coinSound
       value: 
       objectReference: {fileID: 929208263}
+    - target: {fileID: 836725886625205717, guid: 72e37a55fa077fe4fa380a145c757d55, type: 3}
+      propertyPath: coinHandler
+      value: 
+      objectReference: {fileID: 11400000, guid: 69149247b3df62b489361a04061c8475, type: 2}
     - target: {fileID: 4941225920956387734, guid: 72e37a55fa077fe4fa380a145c757d55, type: 3}
       propertyPath: m_LocalPosition.x
       value: -6.015977
@@ -10081,3 +10116,4 @@ SceneRoots:
   - {fileID: 1948654528}
   - {fileID: 736151184}
   - {fileID: 142145697}
+  - {fileID: 567666276}

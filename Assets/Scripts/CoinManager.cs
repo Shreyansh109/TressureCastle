@@ -5,22 +5,23 @@ public class CoinManager : MonoBehaviour
 {
     [SerializeField] private TMP_Text coinText;
     [SerializeField] private AudioSource coinSound;
-    private int coinCount = 0;
+    [SerializeField] private CoinHandler coinHandler;
+    //private int coinCount;
 
     void Start()
     {
-        UpdateCoinText();
+        UpdateCoinText(coinHandler.CoinCount);
     }
 
-    void UpdateCoinText()
+    void UpdateCoinText(int coinCount)
     {
         coinText.text = coinCount.ToString();
     }
 
     void AddCoin(int amount)
     {
-        coinCount += amount;
-        UpdateCoinText();
+        coinHandler.CoinCount += amount;   
+        UpdateCoinText(coinHandler.CoinCount);
     }
 
     void OnTriggerEnter2D(Collider2D other)
