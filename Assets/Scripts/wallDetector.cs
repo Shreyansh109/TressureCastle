@@ -8,11 +8,12 @@ public class wallDetector : MonoBehaviour
     {
         enemyScript = enemy.GetComponent<EnemyScript>();
     }
-
+    
     void OnTriggerEnter2D(Collider2D collision)
     {
         if(!collision.gameObject.CompareTag("Player"))
         {
+            print(collision.gameObject.tag);
             enemy.transform.localScale = new Vector3(enemy.transform.localScale.x*-1,
                                                         enemy.transform.localScale.y,
                                                         enemy.transform.localScale.z);
