@@ -13,6 +13,7 @@ public class Health : MonoBehaviour
     [SerializeField] Animator animator;
     [SerializeField] PlayerMovement playerMovement;
     [SerializeField] ParticleSystem particleSystem;
+    [SerializeField] private GameObject deathCanvas;
 
     void Start()
     {
@@ -48,7 +49,8 @@ public class Health : MonoBehaviour
                 light.intensity -= Time.deltaTime * 0.5f;
             }else if(light.intensity <= 0f)
             {
-                UnityEngine.SceneManagement.SceneManager.LoadScene(UnityEngine.SceneManagement.SceneManager.GetActiveScene().buildIndex);
+                deathCanvas.gameObject.SetActive(true);
+                //UnityEngine.SceneManagement.SceneManager.LoadScene(UnityEngine.SceneManagement.SceneManager.GetActiveScene().buildIndex);
             }
         }else return;
     }
