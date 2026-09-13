@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.Rendering.Universal;
+using UnityEngine.SceneManagement;
 
 public class Health : MonoBehaviour
 {
@@ -45,6 +46,9 @@ public class Health : MonoBehaviour
             if(light.intensity > 0f)
             {
                 light.intensity -= Time.deltaTime * 0.5f;
+            }else if(light.intensity <= 0f)
+            {
+                UnityEngine.SceneManagement.SceneManager.LoadScene(UnityEngine.SceneManagement.SceneManager.GetActiveScene().buildIndex);
             }
         }else return;
     }

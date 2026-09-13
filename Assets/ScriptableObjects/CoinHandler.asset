@@ -12,4 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f2b39cd90a5ebd5408e9760a2ad17d72, type: 3}
   m_Name: CoinHandler
   m_EditorClassIdentifier: Assembly-CSharp::CoinHandler
-  _coinCount: 36
+  _coinCount: 0
