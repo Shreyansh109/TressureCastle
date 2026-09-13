@@ -15,8 +15,10 @@ public class AudioManager : MonoBehaviour
     [Header("Player Sound")]
     [SerializeField] AudioSource playerAudioSource;
     [SerializeField] AudioClip jumpSound;
+    [SerializeField] AudioClip runSound;
 
     bool DieSFXplayed = false;
+    Vector2 movementInput;
 
     void Update()
     {
@@ -29,6 +31,22 @@ public class AudioManager : MonoBehaviour
         {
             BGM.Pause();
             LoseMusic.Play();
+        }
+    }
+
+    void OnMove(InputValue value)
+    {
+        movementInput = value.Get<Vector2>();
+        if(playerMovement.getAlive() && movementInput.x != 0)
+        {
+            playerAudioSource.clip = runSound;
+            if(!playerAudioSource.isPlaying)
+            {
+                playerAudioSource.Play();
+            }
+        }else if(movementInput.x == 0)
+        {
+            playerAudioSource.Pause();
         }
     }
 
