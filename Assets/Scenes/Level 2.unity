@@ -410,6 +410,26 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5151892370907508698, guid: e44913f227e154349973af2dd7b277df, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5151892370907508698, guid: e44913f227e154349973af2dd7b277df, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5151892370907508698, guid: e44913f227e154349973af2dd7b277df, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 142145699}
+    - target: {fileID: 5151892370907508698, guid: e44913f227e154349973af2dd7b277df, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5151892370907508698, guid: e44913f227e154349973af2dd7b277df, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Reset
+      objectReference: {fileID: 0}
     - target: {fileID: 6031543310382753652, guid: e44913f227e154349973af2dd7b277df, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -468,6 +488,17 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 6683279981314243738, guid: e44913f227e154349973af2dd7b277df, type: 3}
   m_PrefabInstance: {fileID: 142145697}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &142145699 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8895290402309339218, guid: e44913f227e154349973af2dd7b277df, type: 3}
+  m_PrefabInstance: {fileID: 142145697}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 142145698}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fc8f3787a4d874047bd0da7f96a3a64c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DeathCanvasScript
 --- !u!1001 &184468669
 PrefabInstance:
   m_ObjectHideFlags: 0

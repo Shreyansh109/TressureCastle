@@ -1111,9 +1111,9 @@ RectTransform:
   - {fileID: 6524872752565979260}
   m_Father: {fileID: 2902548575453357036}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 400.00003, y: -321.8446}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &7754044661960760656
@@ -1211,6 +1211,7 @@ GameObject:
   - component: {fileID: 5297333180004567914}
   - component: {fileID: 8063609274448853547}
   - component: {fileID: 6739403181890937085}
+  - component: {fileID: 8895290402309339218}
   m_Layer: 0
   m_Name: DeathCanvas
   m_TagString: Untagged
@@ -1329,6 +1330,19 @@ MonoBehaviour:
   m_ChildScaleWidth: 0
   m_ChildScaleHeight: 0
   m_ReverseArrangement: 0
+--- !u!114 &8895290402309339218
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6683279981314243738}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fc8f3787a4d874047bd0da7f96a3a64c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DeathCanvasScript
+  coinHandler: {fileID: 11400000, guid: 69149247b3df62b489361a04061c8475, type: 2}
 --- !u!1 &6980468330624745629
 GameObject:
   m_ObjectHideFlags: 0
@@ -1678,9 +1692,9 @@ RectTransform:
   - {fileID: 3107445024499527722}
   m_Father: {fileID: 2902548575453357036}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 400.00003, y: -231.91676}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &8238631583563858694
@@ -1764,7 +1778,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 3196274416711147450}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 8895290402309339218}
+        m_TargetAssemblyTypeName: DeathCanvasScript, Assembly-CSharp
+        m_MethodName: Restart
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &8936729606661310835
 GameObject:
   m_ObjectHideFlags: 0
@@ -1799,9 +1825,9 @@ RectTransform:
   - {fileID: 6843029931447854348}
   m_Father: {fileID: 2902548575453357036}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 400.00003, y: -141.98892}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1756891054265545076
@@ -1885,4 +1911,16 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 4375854281175333611}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 8895290402309339218}
+        m_TargetAssemblyTypeName: DeathCanvasScript, Assembly-CSharp
+        m_MethodName: Reset
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
