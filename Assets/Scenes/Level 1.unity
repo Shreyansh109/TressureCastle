@@ -397,6 +397,11 @@ AudioSource:
   m_CorrespondingSourceObject: {fileID: 5653875024685617811, guid: ccd956f50866cd543beed9db33a69201, type: 3}
   m_PrefabInstance: {fileID: 436680495}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &573868909 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7413871313715762760, guid: e44913f227e154349973af2dd7b277df, type: 3}
+  m_PrefabInstance: {fileID: 365014199}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &601023404
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2056,6 +2061,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1424269986}
+  - component: {fileID: 1424269987}
   m_Layer: 0
   m_Name: LevelDesigner
   m_TagString: Untagged
@@ -2078,6 +2084,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1424269987
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1424269985}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 60694399b35c03e43939c5b7945d9ecd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::LevelDesignerScript
+  coinCanvas: {fileID: 573868909}
 --- !u!1 &1494339040 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6552621468706849105, guid: e44913f227e154349973af2dd7b277df, type: 3}

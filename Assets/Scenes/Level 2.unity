@@ -463,6 +463,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e44913f227e154349973af2dd7b277df, type: 3}
+--- !u!1 &142145698 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6683279981314243738, guid: e44913f227e154349973af2dd7b277df, type: 3}
+  m_PrefabInstance: {fileID: 142145697}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &184468669
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9048,6 +9053,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Santiago-player
       objectReference: {fileID: 0}
+    - target: {fileID: 7266095019291213179, guid: 72e37a55fa077fe4fa380a145c757d55, type: 3}
+      propertyPath: deathCanvas
+      value: 
+      objectReference: {fileID: 142145698}
     - target: {fileID: 7266095019291213179, guid: 72e37a55fa077fe4fa380a145c757d55, type: 3}
       propertyPath: globalLight
       value: 
