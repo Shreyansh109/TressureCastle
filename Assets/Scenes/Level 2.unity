@@ -428,7 +428,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5151892370907508698, guid: e44913f227e154349973af2dd7b277df, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: Reset
+      value: Retry
       objectReference: {fileID: 0}
     - target: {fileID: 6031543310382753652, guid: e44913f227e154349973af2dd7b277df, type: 3}
       propertyPath: m_AnchorMax.y

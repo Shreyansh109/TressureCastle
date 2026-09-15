@@ -1914,7 +1914,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 8895290402309339218}
         m_TargetAssemblyTypeName: DeathCanvasScript, Assembly-CSharp
-        m_MethodName: Reset
+        m_MethodName: Retry
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

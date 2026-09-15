@@ -4,7 +4,7 @@ using UnityEngine.SceneManagement;
 public class DeathCanvasScript : MonoBehaviour
 {
     [SerializeField] private CoinHandler coinHandler;
-    public void Reset()
+    public void Retry()
     {
         UnityEngine.SceneManagement.SceneManager.LoadScene(UnityEngine.SceneManagement.SceneManager.GetActiveScene().buildIndex);
     }
