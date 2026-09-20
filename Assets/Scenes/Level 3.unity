@@ -59643,6 +59643,22 @@ PrefabInstance:
       propertyPath: coinHandler
       value: 
       objectReference: {fileID: 11400000, guid: 69149247b3df62b489361a04061c8475, type: 2}
+    - target: {fileID: 1548126972128856465, guid: 72e37a55fa077fe4fa380a145c757d55, type: 3}
+      propertyPath: m_Size.x
+      value: 0.44549108
+      objectReference: {fileID: 0}
+    - target: {fileID: 1548126972128856465, guid: 72e37a55fa077fe4fa380a145c757d55, type: 3}
+      propertyPath: m_Size.y
+      value: 0.8647959
+      objectReference: {fileID: 0}
+    - target: {fileID: 1548126972128856465, guid: 72e37a55fa077fe4fa380a145c757d55, type: 3}
+      propertyPath: m_Offset.x
+      value: -0.061489925
+      objectReference: {fileID: 0}
+    - target: {fileID: 1548126972128856465, guid: 72e37a55fa077fe4fa380a145c757d55, type: 3}
+      propertyPath: m_Offset.y
+      value: 0.033502918
+      objectReference: {fileID: 0}
     - target: {fileID: 2981611019872110164, guid: 72e37a55fa077fe4fa380a145c757d55, type: 3}
       propertyPath: canvasPressClimb
       value: 
@@ -59690,6 +59706,14 @@ PrefabInstance:
     - target: {fileID: 5913314406794371725, guid: 72e37a55fa077fe4fa380a145c757d55, type: 3}
       propertyPath: m_Name
       value: Santiago-player
+      objectReference: {fileID: 0}
+    - target: {fileID: 6022325326629654986, guid: 72e37a55fa077fe4fa380a145c757d55, type: 3}
+      propertyPath: m_Size.y
+      value: 0.09027171
+      objectReference: {fileID: 0}
+    - target: {fileID: 6022325326629654986, guid: 72e37a55fa077fe4fa380a145c757d55, type: 3}
+      propertyPath: m_Offset.y
+      value: -0.37739658
       objectReference: {fileID: 0}
     - target: {fileID: 7266095019291213179, guid: 72e37a55fa077fe4fa380a145c757d55, type: 3}
       propertyPath: deathCanvas
