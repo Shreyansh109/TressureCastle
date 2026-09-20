@@ -9109,6 +9109,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 8300000, guid: db95a801cd85fed499932d0d362f6f45, type: 3}
     - target: {fileID: 7576310624598845687, guid: 72e37a55fa077fe4fa380a145c757d55, type: 3}
+      propertyPath: hazardsSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 05c5569ef69bc4c459a07b5fb2fb92f7, type: 3}
+    - target: {fileID: 7576310624598845687, guid: 72e37a55fa077fe4fa380a145c757d55, type: 3}
       propertyPath: DeathAudioSource
       value: 
       objectReference: {fileID: 1491973340}

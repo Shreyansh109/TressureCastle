@@ -16,6 +16,8 @@ public class AudioManager : MonoBehaviour
     [SerializeField] AudioSource playerAudioSource;
     [SerializeField] AudioClip jumpSound;
     [SerializeField] AudioClip runSound;
+    [SerializeField] AudioClip hazardsSound;
+
 
     bool DieSFXplayed = false;
     Vector2 movementInput;
@@ -31,6 +33,14 @@ public class AudioManager : MonoBehaviour
         {
             BGM.Pause();
             LoseMusic.Play();
+        }
+    }
+
+    void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (LayerMask.LayerToName(collision.gameObject.layer) == "Hazards")
+        {
+            playerAudioSource.PlayOneShot(hazardsSound);
         }
     }
 
