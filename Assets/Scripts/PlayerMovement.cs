@@ -31,7 +31,7 @@ public class PlayerMovement : MonoBehaviour
         Climb();
     }
 
-    void OnMove(InputValue value)
+    public void OnMove(InputValue value)
     {
         if (!isAlive) return;
         movementInput = value.Get<Vector2>();
