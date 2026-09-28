@@ -7,11 +7,13 @@ public class DeathCanvasScript : MonoBehaviour
     public void Retry()
     {
         UnityEngine.SceneManagement.SceneManager.LoadScene(UnityEngine.SceneManagement.SceneManager.GetActiveScene().buildIndex);
+        Time.timeScale = 1f;
     }
 
     public void Restart()
     {
         UnityEngine.SceneManagement.SceneManager.LoadScene(0);
         coinHandler.CoinCount = 0;
+        Time.timeScale = 1f;
     }
 }
