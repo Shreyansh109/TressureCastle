@@ -5389,7 +5389,7 @@ ParticleSystemRenderer:
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 2115959847
-  m_SortingLayer: 6
+  m_SortingLayer: 7
   m_SortingOrder: 0
   m_MaskInteraction: 0
   m_RenderMode: 0
@@ -5445,6 +5445,7 @@ GameObject:
   - component: {fileID: 836725886625205717}
   - component: {fileID: 3373732817002939100}
   - component: {fileID: 8607037423333853595}
+  - component: {fileID: 7094189199052010916}
   m_Layer: 3
   m_Name: Santiago-player
   m_TagString: Player
@@ -5515,7 +5516,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 203208895
-  m_SortingLayer: 9
+  m_SortingLayer: 10
   m_SortingOrder: 0
   m_MaskInteraction: 0
   m_Sprite: {fileID: 1194579902333200216, guid: 373f84c5876d470408d54383a54545fa, type: 3}
@@ -5584,7 +5585,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: -0.07262187, y: -0.3802808}
+  m_Offset: {x: -0.07262187, y: -0.37739658}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -5594,7 +5595,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 0.27802494, y: 0.09604016}
+  m_Size: {x: 0.27802494, y: 0.09027171}
   m_EdgeRadius: 0
 --- !u!70 &1548126972128856465
 CapsuleCollider2D:
@@ -5630,8 +5631,8 @@ CapsuleCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: -0.07374767, y: 0.029176572}
-  m_Size: {x: 0.5190379, y: 0.8734486}
+  m_Offset: {x: -0.061489925, y: 0.033502918}
+  m_Size: {x: 0.44549108, y: 0.8647959}
   m_Direction: 0
 --- !u!50 &1078623331509825450
 Rigidbody2D:
@@ -5723,6 +5724,7 @@ MonoBehaviour:
   animator: {fileID: 340607684582795138}
   playerMovement: {fileID: 2981611019872110164}
   particleSystem: {fileID: 7445919872290570666}
+  deathCanvas: {fileID: 0}
 --- !u!114 &7576310624598845687
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5741,6 +5743,8 @@ MonoBehaviour:
   DeathAudioSource: {fileID: 0}
   playerAudioSource: {fileID: 8607037423333853595}
   jumpSound: {fileID: 8300000, guid: 8a40ea6a3601db241aa3369e15736aa6, type: 3}
+  runSound: {fileID: 8300000, guid: db95a801cd85fed499932d0d362f6f45, type: 3}
+  hazardsSound: {fileID: 8300000, guid: 05c5569ef69bc4c459a07b5fb2fb92f7, type: 3}
 --- !u!114 &6046188361856742668
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5768,6 +5772,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::CoinManager
   coinText: {fileID: 0}
   coinSound: {fileID: 0}
+  coinHandler: {fileID: 11400000, guid: 69149247b3df62b489361a04061c8475, type: 2}
 --- !u!81 &3373732817002939100
 AudioListener:
   m_ObjectHideFlags: 0
@@ -5873,6 +5878,22 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &7094189199052010916
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5913314406794371725}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: adf9d5e5252a7274d93b3c73e229ef15, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::UiManager
+  PauseCanvas: {fileID: 0}
+  ControlCanvas: {fileID: 0}
+  HealthCanvas: {fileID: 0}
+  CoinCanvas: {fileID: 0}
 --- !u!1001 &7422054054718892317
 PrefabInstance:
   m_ObjectHideFlags: 0

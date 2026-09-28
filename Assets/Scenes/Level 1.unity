@@ -224,6 +224,21 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e44913f227e154349973af2dd7b277df, type: 3}
+--- !u!1 &365014200 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8543600957679643289, guid: e44913f227e154349973af2dd7b277df, type: 3}
+  m_PrefabInstance: {fileID: 365014199}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &365014201 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1718365405656870544, guid: e44913f227e154349973af2dd7b277df, type: 3}
+  m_PrefabInstance: {fileID: 365014199}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &365014202 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 796701273873846882, guid: e44913f227e154349973af2dd7b277df, type: 3}
+  m_PrefabInstance: {fileID: 365014199}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &436680495
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1885,6 +1900,22 @@ PrefabInstance:
       propertyPath: m_Name
       value: Santiago-player
       objectReference: {fileID: 0}
+    - target: {fileID: 7094189199052010916, guid: 72e37a55fa077fe4fa380a145c757d55, type: 3}
+      propertyPath: CoinCanvas
+      value: 
+      objectReference: {fileID: 573868909}
+    - target: {fileID: 7094189199052010916, guid: 72e37a55fa077fe4fa380a145c757d55, type: 3}
+      propertyPath: PauseCanvas
+      value: 
+      objectReference: {fileID: 365014200}
+    - target: {fileID: 7094189199052010916, guid: 72e37a55fa077fe4fa380a145c757d55, type: 3}
+      propertyPath: HealthCanvas
+      value: 
+      objectReference: {fileID: 365014202}
+    - target: {fileID: 7094189199052010916, guid: 72e37a55fa077fe4fa380a145c757d55, type: 3}
+      propertyPath: ControlCanvas
+      value: 
+      objectReference: {fileID: 365014201}
     - target: {fileID: 7266095019291213179, guid: 72e37a55fa077fe4fa380a145c757d55, type: 3}
       propertyPath: deathCanvas
       value: 

@@ -15,10 +15,13 @@ public class Health : MonoBehaviour
     [SerializeField] ParticleSystem particleSystem;
     [SerializeField] private GameObject deathCanvas;
 
+    UiManager uiManager;
+
     void Start()
     {
         light = globalLight.GetComponent<Light2D>();
         playerCollider = GetComponent<BoxCollider2D>();
+        uiManager = GetComponent<UiManager>();
     }
 
     void Update()
@@ -50,6 +53,7 @@ public class Health : MonoBehaviour
             }else if(light.intensity <= 0f)
             {
                 deathCanvas.gameObject.SetActive(true);
+                uiManager.DeathGame();
                 //UnityEngine.SceneManagement.SceneManager.LoadScene(UnityEngine.SceneManagement.SceneManager.GetActiveScene().buildIndex);
             }
         }else return;
