@@ -40,7 +40,7 @@ public class AudioManager : MonoBehaviour
     {
         if (LayerMask.LayerToName(collision.gameObject.layer) == "Hazards")
         {
-            playerAudioSource.PlayOneShot(hazardsSound);
+            //playerAudioSource.PlayOneShot(hazardsSound);
         }
     }
 
