@@ -18,6 +18,11 @@ public class PlayerMovement : MonoBehaviour
 
     [SerializeField] GameObject canvasPressClimb;
 
+    void Onnable()
+    {
+        Time.timeScale = 1f;
+    }
+
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
