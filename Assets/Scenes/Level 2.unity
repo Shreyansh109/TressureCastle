@@ -468,6 +468,11 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 6683279981314243738, guid: e44913f227e154349973af2dd7b277df, type: 3}
   m_PrefabInstance: {fileID: 142145697}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &142145699 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1792834259471722500, guid: e44913f227e154349973af2dd7b277df, type: 3}
+  m_PrefabInstance: {fileID: 142145697}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &142145700 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8543600957679643289, guid: e44913f227e154349973af2dd7b277df, type: 3}
@@ -486,6 +491,11 @@ GameObject:
 --- !u!1 &142145703 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 796701273873846882, guid: e44913f227e154349973af2dd7b277df, type: 3}
+  m_PrefabInstance: {fileID: 142145697}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &142145704 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8133911839638145204, guid: e44913f227e154349973af2dd7b277df, type: 3}
   m_PrefabInstance: {fileID: 142145697}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &184468669
@@ -9078,6 +9088,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 142145702}
     - target: {fileID: 7094189199052010916, guid: 72e37a55fa077fe4fa380a145c757d55, type: 3}
+      propertyPath: PauseButton
+      value: 
+      objectReference: {fileID: 142145704}
+    - target: {fileID: 7094189199052010916, guid: 72e37a55fa077fe4fa380a145c757d55, type: 3}
       propertyPath: PauseCanvas
       value: 
       objectReference: {fileID: 142145700}
@@ -9089,6 +9103,10 @@ PrefabInstance:
       propertyPath: ControlCanvas
       value: 
       objectReference: {fileID: 142145701}
+    - target: {fileID: 7094189199052010916, guid: 72e37a55fa077fe4fa380a145c757d55, type: 3}
+      propertyPath: PauseMenuPanel
+      value: 
+      objectReference: {fileID: 142145699}
     - target: {fileID: 7266095019291213179, guid: 72e37a55fa077fe4fa380a145c757d55, type: 3}
       propertyPath: deathCanvas
       value: 
