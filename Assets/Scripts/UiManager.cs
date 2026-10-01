@@ -8,6 +8,7 @@ public class UiManager : MonoBehaviour
     [SerializeField] GameObject HealthCanvas;
     [SerializeField] GameObject CoinCanvas;
     [SerializeField] GameObject PauseMenuPanel;
+    [SerializeField] GameObject PauseButton;
 
 
     public void DeathGame()
@@ -25,6 +26,7 @@ public class UiManager : MonoBehaviour
         ControlCanvas.SetActive(true);
         HealthCanvas.SetActive(true);
         CoinCanvas.SetActive(true);
+        PauseButton.SetActive(true);
         Time.timeScale = 1f;
         PauseMenuPanel.SetActive(false);
     }
@@ -33,6 +35,16 @@ public class UiManager : MonoBehaviour
     {
         Time.timeScale = 1f;
         UnityEngine.SceneManagement.SceneManager.LoadScene(UnityEngine.SceneManagement.SceneManager.GetActiveScene().buildIndex);
+    }
+
+    public void Pause()
+    {
+        PauseButton.SetActive(false);
+        ControlCanvas.SetActive(false);
+        HealthCanvas.SetActive(false);
+        CoinCanvas.SetActive(false);
+        Time.timeScale = 0f;
+        PauseMenuPanel.SetActive(true);
     }
 
 }
